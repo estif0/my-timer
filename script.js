@@ -5,7 +5,7 @@ const secondsEl = document.getElementById('seconds');
 const finalDate = new Date("6 January 2025");
 
 function countdown() {
-  const finalDate = new Date("11 June 2023");
+  const finalDate = new Date("6 January 2025");
   const totalSeconds = (finalDate - new Date()) / 1000;
   const [days, hours, minutes, seconds] = [
     Math.floor(totalSeconds / 86400),
