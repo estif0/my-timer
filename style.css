@@ -3,16 +3,18 @@ body {
 	background-color: #f5f5f5;
 }
 
-.countdown-container,h1 {
+.countdown-container, h1 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	margin-top: 100px;
 }
-h1{
-    font-size: 85px;
+
+h1 {
+	font-size: 85px;
 }
+
 .countdown-el {
 	text-align: center;
 	margin: 0 20px;
@@ -26,4 +28,45 @@ h1{
 span {
 	font-size: 24px;
 	margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 60px;
+	}
+
+	.big-text {
+		font-size: 50px;
+	}
+
+	span {
+		font-size: 18px;
+	}
+
+	.countdown-container {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	.big-text {
+		font-size: 30px;
+	}
+
+	span {
+		font-size: 14px;
+	}
+
+	.countdown-el {
+		margin: 0 10px;
+	}
+
+	.countdown-container {
+		margin-top: 30px;
+	}
 }
