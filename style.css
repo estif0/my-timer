@@ -1,6 +1,8 @@
 body {
-  font-family: sans-serif;
-  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: red;
+  text-align: center;
 }
 
 .countdown-container,
@@ -10,15 +12,21 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  gap: 20px;
 }
 
 h1 {
-  font-size: 85px;
+  font-size: 3em;
+  font-weight: bold;
+  animation: flash 1s infinite;
 }
 
 .countdown-el {
   text-align: center;
   margin: 0 20px;
+  font-size: 2em;
+  font-weight: bold;
+  animation: flash 1s infinite;
 }
 
 .big-text {
@@ -68,5 +76,14 @@ span {
 
   .countdown-container {
     margin-top: 30px;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
   }
 }
